@@ -2,8 +2,8 @@
 void myrot13 (char c)
 {
     int i = 0;
-    char *s ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\0";
-    char *f="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm\0";
+    char *s ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    char *f="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
     while (c !=s[i] && s[i])
         ++i;
     if(s[i] == '\0')
