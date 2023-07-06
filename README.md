@@ -9,34 +9,33 @@ To use the ROT13 decoder program, follow these steps:
 
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/NuIled/MY-ROT13.git
+
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd MY-ROT13
 Compile the C program:
 
-bash
-Copy code
+
 gcc rot13_decoder.c -o rot13_decoder
+
 Run the program with an input string:
 
-bash
-Copy code
+
 ./rot13_decoder "Gur Frperg Punatrf Nethzrag vf hfrq gb qvibepr gur gryrcubar bs gur nycunorg."
 Output:
 
+
 vbnet
-Copy code
+
 The Secret Challenges Argument is used to differentiate the letter of the alphabet.
+
 Example
 Here's an example of using the ROT13 decoder program to decode a ROT13 encoded file:
 
 bash
-Copy code
+
 ./rot13_decoder -f encoded.txt
 The decoded content will be saved in a new file named decoded.txt.
 
