@@ -1,5 +1,39 @@
-# MY-ROT13
-i wrote that script to decode some ctf flags
-ROT13 is a simple encryption technique that involves rotating the letters of the alphabet by 13 positions. Each letter is replaced by the letter 13 places ahead of it in the alphabet, wrapping around to the beginning of the alphabet if necessary. For example, the letter "A" is replaced by "N", "B" is replaced by "O", and so on.
+# ROT13 Decoder
+The ROT13 (Rotate by 13) is a simple encryption technique that involves rotating the letters of the alphabet by 13 positions. This encryption method can be easily decoded by applying the same rotation again.
 
-ROT13 is a Caesar cipher with a fixed key, meaning that the encryption key (the number 13) is always the same. ROT13 is a very weak encryption method and is not considered secure for protecting sensitive information. It is mainly used for obscuring text from casual readers, such as hiding the answer to a puzzle or spoiler in plain sight.
+## Description
+This project provides a script to decode ROT13 encrypted messages. The script takes an input string or file containing ROT13 encoded text and converts it back to its original form.
+
+## Usage
+To use the ROT13 decoder script, follow these steps:
+
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/NuIled/MY-ROT13.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd MY-ROT13
+Run the script with an input string:
+
+bash
+Copy code
+python rot13_decoder.py "Gur Frperg Punatrf Nethzrag vf hfrq gb qvibepr gur gryrcubar bs gur nycunorg."
+Output:
+
+vbnet
+Copy code
+The Secret Challenges Argument is used to differentiate the letter of the alphabet.
+Example
+Here's an example of using the ROT13 decoder script to decode a ROT13 encrypted file:
+
+bash
+Copy code
+python rot13_decoder.py -f encoded.txt
+The decoded content will be saved in a new file named decoded.txt.
+
+Contributions
+Contributions to this project are welcome. If you have any suggestions or improvements, feel free to create a pull request.
